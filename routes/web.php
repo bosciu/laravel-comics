@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $navLinks = config("navlinks");
+    $comics = config("comics");
     return view('homepage', [
-        "navlinks" => $navLinks
+        "navlinks" => $navLinks,
+        "comics" => $comics
     ]);
 });
