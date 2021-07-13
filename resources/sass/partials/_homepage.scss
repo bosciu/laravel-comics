@@ -57,6 +57,7 @@ main {
     background-color: $mainBlue;
     ul {
         display: flex;
+        margin-bottom: 0;
         align-items: center;
         height: 150px;
         list-style: none;
