@@ -14,16 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', function(){
     $navLinks = config("navlinks");
+    $footerLinks = config("footerlinks");
     return view('homepage',[
         "navlinks" => $navLinks,
+        "footerlinks" => $footerLinks
     ]);
 });
 
 Route::get('/comics', function () {
     $navLinks = config("navlinks");
     $comics = config("comics");
+    $footerLinks = config("footerlinks");
     return view('comics', [
         "navlinks" => $navLinks,
-        "comics" => $comics
+        "comics" => $comics,
+        "footerlinks" => $footerLinks
     ]);
 });

@@ -1,1 +1,49 @@
-footer {}
+footer {
+    background: url("/images/footer-bg.jpg") no-repeat;
+    background-size: cover;
+    .container {
+        position: relative;
+        overflow: hidden;
+        ul {
+            list-style: none;
+            li:first-child {
+                padding: 40px 0 5px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            li {
+                font-size: 14px;
+                color: grey;
+            }
+            &:nth-child(2) {
+                padding-left: 50px;
+            }
+            &:last-child {
+                position: absolute;
+                align-self: flex-end;
+            }
+        }
+        p {
+            padding-bottom: 25px;
+            padding-left: 2rem;
+            width: 40%;
+            font-size: 14px;
+            color: grey;
+        }
+        #footer-logo {
+            position: absolute;
+            right: 0;
+            bottom: -20%;
+        }
+    }
+    #social {
+        height: 150px;
+        background-color: coral;
+        .button {
+            padding: 15px 10px;
+            border: 2px solid $mainBlue;
+        }
+    }
+}

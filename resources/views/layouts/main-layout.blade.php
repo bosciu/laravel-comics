@@ -14,6 +14,6 @@
 <body>
     @include('partials.header')
         @yield('main')
-    @include('partials.footer')
+    @include('partials.footer', ["footerlinks" => $footerlinks])
 </body>
 </html>

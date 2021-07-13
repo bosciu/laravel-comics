@@ -11930,3 +11930,63 @@ main .button {
   font-size: 14px;
 }
 
+footer {
+  background: url("/images/footer-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+footer .container {
+  position: relative;
+  overflow: hidden;
+}
+
+footer .container ul {
+  list-style: none;
+}
+
+footer .container ul li:first-child {
+  padding: 40px 0 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+footer .container ul li {
+  font-size: 14px;
+  color: grey;
+}
+
+footer .container ul:nth-child(2) {
+  padding-left: 50px;
+}
+
+footer .container ul:last-child {
+  position: absolute;
+  align-self: flex-end;
+}
+
+footer .container p {
+  padding-bottom: 25px;
+  padding-left: 2rem;
+  width: 40%;
+  font-size: 14px;
+  color: grey;
+}
+
+footer .container #footer-logo {
+  position: absolute;
+  right: 0;
+  bottom: -20%;
+}
+
+footer #social {
+  height: 150px;
+  background-color: coral;
+}
+
+footer #social .button {
+  padding: 15px 10px;
+  border: 2px solid #0282f9;
+}
+
